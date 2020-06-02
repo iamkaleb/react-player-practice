@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import ReactPlayer from 'react-player'
  
-class Player extends Component {
-  render () {
-    return <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' playing />
-  }
+const Player = props => {
+
+    return <ReactPlayer 
+        url='https://www.twitch.tv/videos/638166070' 
+        playing />
 }
 
 export default Player

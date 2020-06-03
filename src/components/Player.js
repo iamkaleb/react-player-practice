@@ -1,11 +1,18 @@
 import React, { Component } from 'react'
 import ReactPlayer from 'react-player'
+import AnnotationCard from './Annotations/Annotations'
  
 const Player = props => {
 
-    return <ReactPlayer 
-        url='https://www.twitch.tv/videos/638166070' 
-        playing />
+    return (
+    <>
+        <ReactPlayer
+            className="react-player"
+            url='https://www.youtube.com/watch?v=IomXcdAAt7E' 
+            playing />
+        <AnnotationCard />
+    </>
+    )
 }
 
 export default Player

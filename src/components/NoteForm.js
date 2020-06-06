@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import data from '../modules/data';
-import NoteList from './NoteList'
+// import NoteList from './NoteList'
 
 const NoteForm = props => {
     const [note, setNote] = useState({timestamp: "", noteContent: ""});
@@ -12,22 +12,30 @@ const NoteForm = props => {
         setNote(stateToChange);
     };
 
+    const constructNote = event => {
+        event.preventDefault();
+        props.setIsLoading(true);
+        data.post(note)
+            .then(props.getNotes)
+            .then(props.setIsLoading(false))
+    };
+
     return (
         <>
             <form>
                 <textarea 
                 placeholder="Add note"
-                id="noteContent" 
-                name="noteContent" 
-                rows="4" 
+                id="noteContent"
+                name="noteContent"
+                rows="4"
                 cols="50"
                 onChange={handleFieldChange}
                 >
                 </textarea>
                 <br></br>
-                <input 
-                type="number" 
-                id="timestamp" 
+                <input
+                type="number"
+                id="timestamp"
                 placeholder="Timestamp"
                 onChange={handleFieldChange}
                 >
@@ -35,8 +43,8 @@ const NoteForm = props => {
                 <br></br>
                 <button
                     type="button"
-                    // disabled={isLoading}
-                    onClick={props.constructNote}
+                    disabled={props.isLoading}
+                    onClick={constructNote}
                 >Submit</button>
             </form>
         </>

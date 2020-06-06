@@ -1,29 +1,19 @@
 {
   "timestamps": [
     {
-      "timestamp": "34",
-      "noteContent": "here is a note",
+      "timestamp": "33",
+      "noteContent": "Note",
       "id": 1
     },
     {
-      "timestamp": "52",
-      "noteContent": "here's another note",
+      "timestamp": "45",
+      "noteContent": "Note 2",
       "id": 2
     },
     {
-      "timestamp": "777",
-      "noteContent": "flava flav",
+      "timestamp": "555",
+      "noteContent": ";jngjrg",
       "id": 3
-    },
-    {
-      "timestamp": "",
-      "noteContent": "",
-      "id": 4
-    },
-    {
-      "timestamp": "",
-      "noteContent": "",
-      "id": 5
     }
   ]
 }

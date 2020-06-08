@@ -5,7 +5,7 @@ import data from '../modules/data';
 import NoteForm from './NoteForm'
 
 const NoteList = () => {
-    const [playing, setPlaying] = useState(false)
+    const [playing, setPlaying] = useState(true)
     const [notes, setNotes] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const [targetTimestamp, setTargetTimestamp] = useState("");

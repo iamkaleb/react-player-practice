@@ -11,7 +11,8 @@
     "react-google-slides": "^2.0.0",
     "react-player": "^2.1.1",
     "react-redux": "^7.2.0",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5"
   },
   "scripts": {
     "start": "react-scripts start",

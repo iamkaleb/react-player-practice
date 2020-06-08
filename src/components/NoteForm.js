@@ -33,19 +33,11 @@ const NoteForm = props => {
                 >
                 </textarea>
                 <br></br>
-                <input
-                type="number"
-                id="timestamp"
-                placeholder="Timestamp"
-                onChange={handleFieldChange}
-                >
-                </input>
-                <br></br>
                 <button
                     type="button"
                     disabled={props.isLoading}
                     onClick={constructNote}
-                >Submit</button>
+                >Submit timestamp</button>
             </form>
         </>
     );
